@@ -1,0 +1,33 @@
+<!--
+akcanSoft Simple HTML Editor v1.0
+Mesut Akcan
+https://akcansoft.blogspot.com
+04/12/2020
+-->
+<html>
+<head>
+<style>
+	.ana {width: 100%; height: 100%}
+	.bolum {width: 49%; height: 90%}
+	.sol {float:left}
+	.sag {float:right; border:1px solid;overflow:auto}
+	textarea {width:100%; height:100%}
+</style>
+<script>
+function Aktar() {
+	document.getElementById("htmMetin").innerHTML = document.getElementById('metin').value.replace(/\n/g, "<br />");
+}
+</script>
+</head>
+<body>
+<div class="ana">
+	<h2><i>akcan</i>Soft Basit HTML Editör</h2>
+	<div class="bolum sol">
+		<textarea oninput="Aktar()"= id="metin"></textarea>
+		Mesut Akcan <a href="https://akcansoft.blogspot.com">akcansoft.blogspot.com</a>
+	</div>
+	<div id="htmMetin" class="bolum sag"></div>
+</div>
+<div style="clear:both"></div>
+</body>
+</html>
